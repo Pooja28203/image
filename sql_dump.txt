@@ -1,0 +1,187 @@
+mens_jeans
+
+CREATE TABLE IF NOT EXISTS `mens_jeans` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+mens_jackets
+
+CREATE TABLE IF NOT EXISTS `mens_jackets` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `chest_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `chest_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `shoulder_width_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `shoulder_width_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sleeve_length_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sleeve_length_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `length_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `length_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sweep_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sweep_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+mens_shorts
+
+CREATE TABLE IF NOT EXISTS `mens_shorts` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+womens_jeans
+
+CREATE TABLE IF NOT EXISTS `womens_jeans` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+womens_jackets
+
+CREATE TABLE IF NOT EXISTS `womens_jackets` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `bust_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `bust_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `shoulder_width_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `shoulder_width_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sleeve_length_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sleeve_length_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `length_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `length_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sweep_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sweep_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+womens_shorts
+
+CREATE TABLE IF NOT EXISTS `womens_shorts` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+womens_skirts
+
+CREATE TABLE IF NOT EXISTS `womens_skirts` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `body_length_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `body_length_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sweep_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `sweep_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+womens_recplg_dungarees
+
+CREATE TABLE IF NOT EXISTS `womens_recplg_dungarees` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `bib_height_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `bib_height_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+womens_sh_dungarees
+
+CREATE TABLE IF NOT EXISTS `womens_sh_dungarees` (
+  `id` int(2) NOT NULL DEFAULT '0',
+  `sku` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `waist_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `hip_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `bib_height_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `bib_height_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `rise_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `inseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `outseam_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_in` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `leg_opening_cm` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
