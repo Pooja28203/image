@@ -1,0 +1,790 @@
+﻿html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: $font;
+    font-display: block;
+    color: $colorBlack;
+    background-color: $colorWhite;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+img {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    max-width: 100%;
+    outline: none;
+    font-size: 0px;
+    line-height: 1px;
+    color: $colorWhite;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+    line-height: 100%;
+    font-kerning: normal;
+    span {
+        color: $colorBlue;
+    }
+}
+h1 {
+    font-size: 42px;
+    line-height: 46px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    @media only screen and (max-width: 1536px) {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    @media only screen and (max-width: 1280px) {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 34px;
+        line-height: 38px;
+    }
+}
+h2 {
+    font-size: 36px;
+    line-height: 40px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 34px;
+        line-height: 38px;
+    }
+    @media only screen and (max-width: 1536px) {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    @media only screen and (max-width: 1280px) {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+h3 {
+    font-size: 32px;
+    line-height: 36px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    @media only screen and (max-width: 1536px) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    @media only screen and (max-width: 1280px) {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+h4 {
+    font-size: 28px;
+    line-height: 32px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    @media only screen and (max-width: 1536px) {
+        font-size: 25px;
+        line-height: 31px;
+    }
+    @media only screen and (max-width: 1280px) {
+        font-size: 23px;
+        line-height: 31px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 21px;
+        line-height: 29px;
+    }
+}
+h5 {
+    font-size: 26px;
+    line-height: 30px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 23px;
+        line-height: 28px;
+    }
+    @media only screen and (max-width: 1536px) {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    @media only screen and (max-width: 1280px) {
+        font-size: 19px;
+        line-height: 24px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+h6 {
+    font-size: 24px;
+    line-height: 28px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    @media only screen and (max-width: 1536px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @media only screen and (max-width: 1280px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+p {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 20px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    &:last-child {
+        padding: 0px 0px 0px 0px;
+    }
+}
+span {
+    margin: 0px;
+    padding: 0px;
+    font-size: inherit;
+    line-height: inherit;
+    font-kerning: normal;
+}
+a {
+    display: inline-block;
+    font-family: $font;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+.anim *, .anim, .anim:before, .anim:after {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+input[type=checkbox], input[type=radio] {
+    background: transparent;
+}
+input, select, textarea {
+    margin: 0px;
+    padding: 0px;
+    font-family: $font;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 0px;
+    outline: none;
+    background: none;
+    border: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    @media only screen and (max-width: 1660px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    @media only screen and (max-width: 1536px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @media only screen and (max-width: 1280px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+button {
+    margin: 0px;
+    padding: 0px;
+    font-family: $font;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+textarea {
+    resize: none;
+}
+select {
+    -webkit-appearance: none;
+    font-family: $font;
+    outline: none;
+    background: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+table {
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.table-cell {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+table td {
+    font-family: $font;
+    font-size: 16px;
+    line-height: 20px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    a {
+        font-family: $font;
+        font-size: 16px;
+        line-height: 20px;
+        @media only screen and (max-width: 1660px) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+*:hover {
+    outline: none;
+    text-decoration: none;
+}
+*:focus {
+    outline: none;
+    text-decoration: none;
+}
+ul, ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+li {
+    font-size: 16px;
+    line-height: 20px;
+    @media only screen and (max-width: 1660px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+.clearboth {
+    clear: both;
+}
+.fa {
+    &::before {
+        font-family: 'FontAwesome';
+    }
+}
+b, strong {
+    font-weight: 700;
+}
+
+/* Page Scrollbar [Start]  */
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.5;
+}
+::-moz-placeholder {
+    color: inherit;
+    opacity: 0.5;
+}
+:-ms-input-placeholder {
+    color: inherit;
+    opacity: 0.5;
+}
+:-moz-placeholder {
+    color: inherit;
+    opacity: 0.5;
+}
+::-moz-placeholder {
+    opacity: 0.5;
+}
+/* Page Scrollbar [End]  */
+
+/* Max Widths [Start] */
+.maxwd {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1280px) {
+        max-width: 100%;
+    }
+}
+.maxwd1440 {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.maxwd90 {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1536px) {
+        max-width: 1440px;
+    }
+    @media only screen and (max-width: 1440px) {
+        max-width: 100%;
+    }
+}
+.maxwd80 {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1536px) {
+        max-width: 1440px;
+    }
+    @media only screen and (max-width: 1440px) {
+        max-width: 100%;
+    }
+}
+.maxwd75 {
+    position: relative;
+    max-width: 75%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1536px) {
+        max-width: 1440px;
+    }
+    @media only screen and (max-width: 1440px) {
+        max-width: 100%;
+    }
+}
+.maxwd70 {
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1536px) {
+        max-width: 1440px;
+    }
+    @media only screen and (max-width: 1440px) {
+        max-width: 100%;
+    }
+}
+.maxwd60 {
+    position: relative;
+    max-width: 60%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1536px) {
+        max-width: 1440px;
+    }
+    @media only screen and (max-width: 1440px) {
+        max-width: 100%;
+    }
+}
+.maxwd50 {
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1536px) {
+        max-width: 1440px;
+    }
+    @media only screen and (max-width: 1440px) {
+        max-width: 100%;
+    }
+}
+.maxwd40 {
+    position: relative;
+    max-width: 40%;
+    margin: 0 auto;
+}
+.maxwd30 {
+    position: relative;
+    max-width: 30%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1680px) {
+        max-width: 30%;
+    }
+    @media only screen and (max-width: 1536px) {
+        max-width: 35%;
+    }
+    @media only screen and (max-width: 1440px) {
+        max-width: 40%;
+    }
+    @media only screen and (max-width: 1366px) {
+        max-width: 45%;
+    }
+    @media only screen and (max-width: 1280px) {
+        max-width: 50%;
+    }
+    @media only screen and (max-width: 1024px) {
+        max-width: 55%;
+    }
+    @media only screen and (max-width: 768px) {
+        max-width: 60%;
+    }
+    @media only screen and (max-width: 767px) {
+        max-width: 100%;
+    }
+}
+/* Max Widths [End] */
+
+/* Generic [Start] */
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+.fullheight {
+    height: 100%;
+    min-height: 100%;
+}
+.posfixed {
+    position: fixed;
+}
+.posrel {
+    position: relative;
+}
+.posabs {
+    position: absolute;
+}
+.section {
+    position: relative;
+}
+header {
+    width: 100%;
+    &::before {
+        content: "";
+        display: table;
+    }
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+main {
+    width: 100%;
+    &::before {
+        content: "";
+        display: table;
+    }
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+section {
+    width: 100%;
+    &::before {
+        content: "";
+        display: table;
+    }
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+footer {
+    width: 100%;
+    &::before {
+        content: "";
+        display: table;
+    }
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.section {
+    padding: 0px 0px;
+    &::before {
+        content: "";
+        display: table;
+    }
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .row {
+        margin: 0px 0px;
+    }
+}
+.table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+.tablecell {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+.anim {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-italic {
+    font-style: italic;
+}
+.display-inlineblock {
+    display: inline-block;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.textcolor-black {
+    color: $colorBlack;
+}
+.textcolor-white {
+    color: $colorWhite;
+}
+.display-none {
+    display: none;
+}
+.visibility-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+.desktop-only {
+    display: block;
+}
+.mobile-only {
+    display: none;
+}
+.pull-left {
+    margin-left: 0px;
+    margin-right: auto;
+}
+.pull-right {
+    margin-right: 0px;
+    margin-left: auto;
+}
+/* Generic [End] */
+
+/* Buttons [Start] */
+.primary-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: $colorWhite;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: $colorBlack;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    &:hover {
+        color: $colorWhite;
+        border-radius: 0px;
+        background-color: $colorBlue;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    &.active {
+        padding: 10px 40px 10px 20px;
+        color: $colorBlack;
+        text-transform: capitalize;
+        border-radius: 10px;
+        background-color: $colorWhite;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        &::after {
+            right: 15px;
+            opacity: 1;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+    }
+    &.v2 {
+        color: $colorWhite;
+        background-color: $colorBlack;
+        &:hover {
+            color: $colorWhite;
+            background-color: $colorBlack;
+        }
+    }
+    &.v3 {
+        color: $colorWhite;
+        background-color: $colorBlue;
+        &:hover {
+            color: $colorBlack;
+            background-color: $colorWhite;
+        }
+    }
+}
+.download-btn {
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    color: $colorWhite;
+    text-transform: capitalize;
+    background-color: $colorBlack;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    &:hover {
+        color: $colorWhite;
+        border-radius: 0px;
+        background-color: $colorBlue;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+}
+/* Buttons [End] */
+
+/* Backgrounds [Start] */
+.white-bg {
+    background-color: $colorWhite;
+}
+.black-bg {
+    background-color: $colorBlack;
+}
+.blue-bg {
+    background-color: $colorBlue;
+}
+/* Backgrounds [End] */
+
+/* Wrapper [Start] */
+.wrapper {
+    .box {
+        margin: 0px 0px;
+        .columns {
+            padding: 0px 0px;
+        }
+    }
+}
+/* Wrapper [End] */
+
+/* Floater [Start] */
+.floater {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+    z-index: 99;
+    a {
+       display: inline-block;
+       &::before {
+            content: "\f232";
+            padding: 5px 10px;
+            font-family: FontAwesome;
+            font-size: 30px;
+            line-height: 30px;
+            color: $colorWhite;
+            background-color: $colorBlue;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 0px;
+            -webkit-transition: all 0.5s ease-in;
+            -moz-transition: all 0.5s ease-in;
+            -ms-transition: all 0.5s ease-in;
+            -o-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+       }
+       &:hover {
+            &::before {
+                color: $colorWhite;
+                background-color: $colorBlack;
+                -webkit-transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -o-transition: all 0.5s ease-in;
+                transition: all 0.5s ease-in;
+            }
+       }
+    }
+}
+/* Floater [End] */

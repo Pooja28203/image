@@ -1,0 +1,229 @@
+/* Header [Start] */
+.header {
+    position: fixed;
+    top: 0px;
+    padding: 0px 0px;
+    background-color: $colorWhite;
+    border-bottom: 2px solid $colorGreen;
+    z-index: 99;
+    @media only screen and (max-width: 767px) {
+        border-bottom: 1px solid $colorGreen;
+    }
+    .wrap {
+        margin: 0px 0px;
+        .title {
+            padding: 15px 20px;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            @media only screen and (max-width: 1440px) {
+                padding: 10px 20px;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-family: $font;
+                font-size: 42px;
+                line-height: 64px;
+                font-weight: normal;
+                color: $colorGreen;
+                letter-spacing: -3px;
+                @media only screen and (max-width: 1680px) {
+                    font-size: 40px;
+                    line-height: 62px;
+                }
+                @media only screen and (max-width: 1536px) {
+                    font-size: 39px;
+                    line-height: 61px;
+                }
+                @media only screen and (max-width: 1440px) {
+                    font-size: 36px;
+                    line-height: 49px;
+                }
+                @media only screen and (max-width: 1366px) {
+                    font-size: 33px;
+                    line-height: 46px;
+                }
+                @media only screen and (max-width: 1280px) {
+                    font-size: 28px;
+                    line-height: 41px;
+                }
+                @media only screen and (max-width: 1024px) {
+                    font-size: 25px;
+                    line-height: 38px;
+                }
+                @media only screen and (max-width: 768px) {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                @media only screen and (max-width: 767px) {
+                    letter-spacing: -1px;
+                }
+                span {
+                    font-size: 26px;
+                    line-height: 58px;
+                    font-weight: normal;
+                    color: $colorGreen;
+                    letter-spacing: 0px;
+                    @media only screen and (max-width: 1536px) {
+                        font-size: 24px;
+                        line-height: 58px;
+                    }
+                    @media only screen and (max-width: 1440px) {
+                        font-size: 22px;
+                        line-height: 56px;
+                    }
+                    @media only screen and (max-width: 1366px) {
+                        font-size: 20px;
+                        line-height: 54px;
+                    }
+                    @media only screen and (max-width: 1280px) {
+                        font-size: 12px;
+                        line-height: 49px;
+                        // letter-spacing: -1px;
+                    }
+                    @media only screen and (max-width: 1024px) {
+                        font-size: 16px;
+                        line-height: 49px;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        font-size: 10px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        .logo {
+            text-align: center;
+            padding: 30px 20px;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            @media only screen and (max-width: 1440px) {
+                padding: 25px 20px;
+            }
+            @media only screen and (max-width: 1024px) {
+                text-align: right;
+            }
+            @media only screen and (max-width: 767px) {
+                text-align: right;
+                padding: 15px 20px;
+            }
+            img {
+                display: inline-block;
+                width: 100%;
+                max-width: 85px;
+                @media only screen and (max-width: 1680px) {
+                    max-width: 76px;
+                }
+                @media only screen and (max-width: 1536px) {
+                    max-width: 71px;
+                }
+                @media only screen and (max-width: 1440px) {
+                    max-width: 65px;
+                }
+                @media only screen and (max-width: 1366px) {
+                    max-width: 61px;
+                }
+                @media only screen and (max-width: 1280px) {
+                    max-width: 55px;
+                }
+                @media only screen and (max-width: 1024px) {
+                    max-width: 46px;
+                }
+                @media only screen and (max-width: 768px) {
+                    max-width: 34px;
+                }
+                @media only screen and (max-width: 414px) {
+                    max-width: 44px;
+                }
+            }
+        }
+        .menu {
+            text-align: right;
+            padding: 15px 20px;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            @media only screen and (max-width: 1440px) {
+                padding: 10px 20px;
+            }
+            @media only screen and (max-width: 767px) {
+                text-align: left;
+                border-top: 1px solid $colorGreen;
+            }
+            a {
+                position: relative;
+                display: inline-block;
+                color: $colorGreen;
+                text-decoration: none;
+            }
+        }
+    }
+}
+body {
+    &.moved {
+        .header {
+            .title {
+                padding: 10px 20px;
+                -webkit-transition: all 0.2s ease-in;
+                -moz-transition: all 0.2s ease-in;
+                -ms-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+            }
+            .logo {
+                padding: 15px 20px;
+                -webkit-transition: all 0.2s ease-in;
+                -moz-transition: all 0.2s ease-in;
+                -ms-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+                @media only screen and (max-width: 767px) {
+                    padding: 10px 20px;
+                }
+            }
+            .menu {
+                padding: 10px 20px;
+                -webkit-transition: all 0.2s ease-in;
+                -moz-transition: all 0.2s ease-in;
+                -ms-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+}
+/* Header [End] */
+
+/* Footer [Start] */
+.footer {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid $colorBlue;
+    background-color: $colorGreen;
+    z-index: 1;
+    .text {
+        text-align: center;
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            @media only screen and (max-width: 1660px) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            @media only screen and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+/* Footer [End] */

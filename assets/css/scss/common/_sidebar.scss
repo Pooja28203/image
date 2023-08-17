@@ -1,0 +1,66 @@
+/* Sidebar [Start] */
+.sidebar {
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    height: 100vh;
+    background-color: $colorGreen;
+    .wrap {
+        margin: 0px 0px;
+        h1, h2, h3, h4, h5, h6 {
+            color: $colorBlue;
+        }
+        .pages {
+            padding: 0px 0px;
+            border: 1px solid $colorGreen;
+            .title {
+                padding: 15px 20px;
+                background-color: $colorWhite;
+                h1, h2, h3, h4, h5, h6 {
+                    color: $colorBlue;
+                }
+                p, a {
+                    color: $colorBlue;
+                    font-weight: 700;
+                }
+            }
+            .list {
+                ul {
+                    padding: 20px 0px 20px 20px;
+                    li {
+                        position: relative;
+                        padding: 0px 0px 10px 20px;
+                        list-style-type: none;
+                        &::after {
+                            content: "\27A4";
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            color: $colorBlue;
+                            font-size: 10px;
+                        }
+                        &.active {
+                            a {
+                                font-weight: 700;
+                            }
+                        }
+                        a {
+                            display: inline-block;
+                            color: $colorBlue;
+                            font-size: 16px;
+                            line-height: 20px;
+                            @media only screen and (max-width: 1660px) {
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                            @media only screen and (max-width: 600px) {
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Sidebar [End] */

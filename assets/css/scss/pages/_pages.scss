@@ -1,0 +1,216 @@
+/* Login [Start] */
+.login {
+    // position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    .wrap {
+        position: relative;
+        padding: 0px 20px;
+        margin: 0 auto;
+    }
+    form {
+        padding: 0px 0px;
+    }
+    .headline {
+        padding: 20px 0px;
+        text-align: center;
+        h1, h2, h3, h4, h5, h6 {
+            color: $colorBlue;
+        }
+    }
+    .title {
+        padding: 20px 0px;
+        h1, h2, h3, h4, h5, h6 {
+            color: $colorBlue;
+        }
+    }
+    .fields {
+        label {
+            display: block;
+            color: $colorBlue;
+            padding: 0px 0px;
+            margin-bottom: 10px;
+            &.error {
+                color: $colorRed;
+            }
+        }
+        input {
+            display: block;
+            width: 100%;
+            color: $colorBlue;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border: 1px solid $colorGrey;
+            border-radius: 10px;
+            &.error {
+                border: 1px solid $colorRed;
+            }
+        }
+        input[type="submit"] {
+            position: relative;
+            display: inline-block;
+            width: auto;
+            border: 1px solid $colorGrey;
+            background-color: $colorGreen;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            &:hover {
+                color: $colorWhite;
+                background-color: $colorGrey;
+                -webkit-transition: all 0.2s ease-in;
+                -moz-transition: all 0.2s ease-in;
+                -ms-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+}
+/* Login [End] */
+
+/* Banner [Start] */
+.banner {
+    // position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    .wrap {
+        position: relative;
+        padding: 0px 20px;
+        margin: 0px auto;
+    }
+    .headline {
+        padding: 20px 0px 40px 0px;
+        text-align: center;
+        h1, h2, h3, h4, h5, h6 {
+            color: $colorBlue;
+        }
+    }
+    .title {
+        text-align: center;
+        padding: 20px 0px;
+        h1, h2, h3, h4, h5, h6 {
+            color: $colorBlue;
+            padding-bottom: 10px;
+        }
+    }
+    .list {
+        text-align: center;
+        padding: 20px 0px;
+        ul {
+            li {
+                position: relative;
+                padding: 0px 0px 10px 20px;
+                list-style-type: none;
+                &::before {
+                    content: "\27A4";
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: $colorBlue;
+                    margin-right: 10px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .categories {
+        text-align: center;
+        padding: 10px 10px;
+        p, a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: $colorBlue;
+            border: 1px solid $colorGrey;
+            background-color: $colorGreen;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            &:hover {
+                color: $colorWhite;
+                background-color: $colorGrey;
+                -webkit-transition: all 0.2s ease-in;
+                -moz-transition: all 0.2s ease-in;
+                -ms-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+}
+/* Banner [End] */
+
+/* Category [Start] */
+.category {
+    // position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    .wrap {
+        padding: 0px 20px;
+        &:first-child {
+            border-right: 2px solid $colorBlue;
+        }
+    }
+    .headline {
+        padding: 20px 0px 40px 0px;
+        text-align: center;
+        h1, h2, h3, h4, h5, h6 {
+            color: $colorBlue;
+        }
+    }
+    .title {
+        text-align: center;
+        padding: 20px 0px;
+        h1, h2, h3, h4, h5, h6 {
+            color: $colorBlue;
+        }
+    }
+    .elements {
+        text-align: center;
+        padding: 10px 10px;
+        p, a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: $colorBlue;
+            border: 1px solid $colorGrey;
+            background-color: $colorGreen;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            &:hover {
+                color: $colorWhite;
+                background-color: $colorGrey;
+                -webkit-transition: all 0.2s ease-in;
+                -moz-transition: all 0.2s ease-in;
+                -ms-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+    .scroll-content {
+        position: relative;
+        height: 60vh;
+        overflow: auto;
+    }
+}
+/* Category [End] */
